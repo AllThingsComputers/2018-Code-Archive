@@ -1,0 +1,248 @@
+<style>
+    html{
+    background: black;
+    text-align: center;
+    min-width:300px;
+}
+header {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+}
+#title{
+    color:white;
+    font-size: 4em;
+}
+#form-outer{
+    background-color:white;
+    marging:0 auto;
+    border-radius:10px;
+    width:70%;
+    max-width:900px;
+    padding: 30px 20px 20px;
+    opacity:0.9;
+
+}
+.label{
+    display: inline-block;
+    text-align:right;
+    width: 30%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size:20px;
+}
+.label1{
+    display: inline-block;
+    text-align:right;
+    width: 30%;
+    padding: 10px;
+    vertical-align: top;
+    margin-top: 35px;
+    font-size:20px
+}
+.label2{
+    display: inline-block;
+    text-align:right;
+    width: 30%;
+    padding: 10px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size:18px;
+}
+.righttab{
+    display: inline-block;
+    text-align: left;
+    width:55%;
+    vertical-align: middle;
+}
+.input-field{
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+.level,
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}
+#submit {
+    background-color: #c0c0c0;
+    border-radius: 1px;
+    color: black;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0 solid;
+}
+#submit:hover{
+    cursor:pointer;
+    background-color:gray;
+}
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 15px 10px 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+#dropdown:hover{
+    cursor:pointer;
+    background-color:gray;
+}
+.radio, .checkbox {
+    position: relative;
+    left:-43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+
+}
+#description{
+    font-size:30px;
+}
+@media screen and (max-width: 833px) {
+    .input-field {
+        width: 80%;
+    }
+    select {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .label {
+        width: 100%;
+        text-align: left;
+    }
+    .righttab {
+        width: 80%;
+        float: left;
+    }
+    .input-field {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    </head>
+<h1 id="title">Sign up for a free course</h1>
+<center><div id="form-outer"><center>
+    <p id="description">
+        Course available as below
+    </p>
+    <form id="survey-form" method="Get" action="#">
+        <div class="rowtab">
+            <div class="label">
+                <label id="name-label" for="name"> Name: </label>
+            </div>
+            <div class="righttab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+        </div><br>
+        <div class="rowtab">
+            <div class="label">
+                <label id="email-label" for="email"> Email: </label>
+            </div>
+            <div class="righttab">
+                <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+            </div>
+        </div><br>
+        <div class="rowtab">
+            <div class="label">
+                <label id="number-label" for="age"> Age: </label>
+            </div>
+            <div class="righttab">
+                <input autofocus type="number" id="number" name="age" min="1" max="100" class="input-field" placeholder="Enter your age" required>
+            </div>
+        </div><br>
+        <div class="rowtab">
+            <div class="label1">
+                <label for="level"> Your previous experience level </label>
+            </div>
+            <div class="righttab">
+                <ul style="list-style: none;">
+                    <li class="radio">
+                        <label>Advanced
+                            <input name="radio-buttons" value="1" type="radio" class="level">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>Intermediate
+                            <input name="radio-buttons" value="1" type="radio" class="level">
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>Beginner
+                            <input name="radio-buttons" value="1" type="radio" class="level">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div><br>
+        <div class="rowtab">
+            <div class="label1">
+                <label for="skills"> Skills you already have? </label>
+            </div>
+            <div class="righttab">
+                <ul id="skills" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>
+                            <input name="skills" value="1" type="checkbox" class="skills">Sales
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="skills" value="2" type="checkbox" class="skills">Customer Service
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="skills" value="3" type="checkbox" class="skills">B2B
+                        </label>
+                    </li>
+                    <li class="checkbox">
+                        <label>
+                            <input name="skills" value="4" type="checkbox" class="skills">Marketing
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div><br>
+        <div class="rowtab">
+            <div class="label2">
+                <label for="Survivalists"> Who is your prefeered speaker?</label>
+            </div>
+            <div class="righttab">
+                <select name="Survivalists" id="dropdown" class="dropdown">
+                    <option style="color:white;" disabled value>Speakers</option>
+                    <option value>Kyle Reese</option>
+                    <option value>John Connor</option>
+                    <option value>Thomas Anderson</option>
+                    <option value>None</option>
+
+                </select>
+            </div>
+        </div><br>
+        <div class="rowtab">
+            <div class="label2">
+                <label for="comments"> Any dietary requirements for your included meal?</label>
+            </div>
+            <div class="righttab">
+                <textarea id="comment" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your requirments here or leave blank..."></textarea>
+            </div>
+        </div>
+        <button id="submit" type="submit">Submit
+        </button>
+    </form>
+</div>
