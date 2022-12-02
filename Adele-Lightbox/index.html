@@ -1,0 +1,68 @@
+<STYLE>
+  #lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#lightbox.open {
+  display: block;
+}
+
+#lightbox_content {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 3px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -200px;
+  text-align: center;
+}
+
+#close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+</STYLE>
+<h1>Hello? It's me</h1>
+<button id="clickme">I was wondering if after all these years you'd like to meet 
+</button>
+
+<div id="lightbox">
+  <div id="lightbox_content">
+    <div id="close">&times;</div>
+    <h2>Javascript Lightbox</h2>
+    <img src="http://www.relatably.com/m/img/adele-memes-hello-from-the-other-side/image.png"</img>
+  </div>
+</div>
+
+<script>
+  document.getElementById("clickme").addEventListener("click", function() {
+  document.getElementById("lightbox").className = "open";
+});
+
+document.getElementById("close").addEventListener("click", function() {
+  document.getElementById("lightbox").className = "";
+});
+
+document.getElementById("lightbox").addEventListener("click", function(e) {
+  if (e.target.id == "lightbox") {
+    document.getElementById("lightbox").className = "";
+  }
+});
+</script>
