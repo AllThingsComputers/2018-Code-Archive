@@ -1,0 +1,181 @@
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+            body {
+                font-family: arial; 
+                background: #98FB98; 
+            }
+          
+          html body {
+            margin: 0px; 
+            padding: 0px;
+          }
+
+            #header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #header-img {
+                max-width: 50px;
+                max-height: 50px;
+                
+            }
+
+            #company-name {
+                color: #006400;
+                display: inline;
+            }
+
+            #nav-bar ul{
+                text-align: right;
+                list-style-type: none;
+            }
+
+            #nav-bar ul li {
+                display: inline-block;
+                padding-right: 60px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #form {
+                text-align: center;
+            }
+
+            #submit {
+                margin-top: 10px;
+                padding: 15px;
+                border: none;
+                text-transform: uppercase;
+                background: orange;
+                cursor: pointer;
+
+            }
+          
+          #submit:hover {
+            background-color: #ffe278;
+          }
+
+            #email {
+                text-align: center;
+                color: black;
+                padding: 5px;
+            }
+
+            #container {
+                display: inline-grid; 
+                grid-template-rows: 1fr 1fr 1fr; 
+                grid-template-columns: 1fr 5fr;
+                margin-top: 5%;
+                padding-right: 15px;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            
+            #photolab {
+                max-width: 100px; 
+                max-height: 100px; 
+                margin-top: 10px;
+            }
+
+           #video {
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 100px;
+               display: block;
+           }
+
+           #sur-thrive {
+               text-align: center; 
+               color: #ffb500;
+               text-transform: uppercase;
+               margin-bottom: 80px;
+           }
+
+          
+
+            #prices1 {
+            display: inline-flex; 
+            flex-direction: column; 
+            text-align: center;
+            width: 290px;
+            max-height: 500px;
+            border: 1px solid orange;
+            margin-top: 30px;
+            margin-left: 10px;
+            
+        }
+          
+            .title99 {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+
+        .price {
+            font-weight: bold; 
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .description-package ul {
+            list-style-type: bullet;
+            text-align: left;
+            max-width: 150px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .button-ball {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            
+        }
+
+        #button1 {
+            border: none;
+            padding: 10px;
+            background-color: orange;
+            cursor: pointer;
+            font-size: 20px;
+        }
+          #button1:hover {
+            background-color: #ffe278;
+          }
+
+        footer ul li {
+            display: inline-block;
+            padding-right: 40px;
+            margin-top: 10px;
+        }
+
+        footer ul {
+            text-align: right;
+            background: orange;
+        }
+
+        #copyright {
+            font-size: 10px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+        }
+          
+          #shop {
+            display: flex; 
+            justify-content: center;
+            margin-bottom: 80px;
+          }
+          
+          #flex {
+            display:flex; 
+            justify-content: center;
+          }
+          
+          
+
+        
+

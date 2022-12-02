@@ -1,0 +1,317 @@
+<style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+            body {
+                font-family: arial; 
+                background: #98FB98; 
+            }
+          
+          html body {
+            margin: 0px; 
+            padding: 0px;
+          }
+
+            #header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #header-img {
+                max-width: 50px;
+                max-height: 50px;
+                
+            }
+
+            #company-name {
+                color: #006400;
+                display: inline;
+            }
+
+            #nav-bar ul{
+                text-align: right;
+                list-style-type: none;
+            }
+
+            #nav-bar ul li {
+                display: inline-block;
+                padding-right: 60px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #form {
+                text-align: center;
+            }
+
+            #submit {
+                margin-top: 10px;
+                padding: 15px;
+                border: none;
+                text-transform: uppercase;
+                background: orange;
+                cursor: pointer;
+
+            }
+          
+          #submit:hover {
+            background-color: #ffe278;
+          }
+
+            #email {
+                text-align: center;
+                color: black;
+                padding: 5px;
+            }
+
+            #container {
+                display: inline-grid; 
+                grid-template-rows: 1fr 1fr 1fr; 
+                grid-template-columns: 1fr 5fr;
+                margin-top: 5%;
+                padding-right: 15px;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            
+            #photolab {
+                max-width: 100px; 
+                max-height: 100px; 
+                margin-top: 10px;
+            }
+
+           #video {
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 100px;
+               display: block;
+           }
+
+           #sur-thrive {
+               text-align: center; 
+               color: #ffb500;
+               text-transform: uppercase;
+               margin-bottom: 80px;
+           }
+
+          
+
+            #prices1 {
+            display: inline-flex; 
+            flex-direction: column; 
+            text-align: center;
+            width: 290px;
+            max-height: 500px;
+            border: 1px solid orange;
+            margin-top: 30px;
+            margin-left: 10px;
+            
+        }
+          
+            .title99 {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+
+        .price {
+            font-weight: bold; 
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .description-package ul {
+            list-style-type: bullet;
+            text-align: left;
+            max-width: 150px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .button-ball {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            
+        }
+
+        #button1 {
+            border: none;
+            padding: 10px;
+            background-color: orange;
+            cursor: pointer;
+            font-size: 20px;
+        }
+          #button1:hover {
+            background-color: #ffe278;
+          }
+
+        footer ul li {
+            display: inline-block;
+            padding-right: 40px;
+            margin-top: 10px;
+        }
+
+        footer ul {
+            text-align: right;
+            background: orange;
+        }
+
+        #copyright {
+            font-size: 10px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+        }
+          
+          #shop {
+            display: flex; 
+            justify-content: center;
+            margin-bottom: 80px;
+          }
+          
+          #flex {
+            display:flex; 
+            justify-content: center;
+          }
+          
+          
+</style>
+
+<head> 
+        <title> Package Selection </title>
+
+      
+    </head>
+
+    <body> 
+        <header id="header"> 
+            
+            <div id="logo-name">
+                <img        src="data:image/jpeg;base64,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"                    alt="Company Logo"> 
+                <h2 id="company-name"> The Speakers LLC </h2>
+            </div> 
+
+            <nav id="nav-bar"> 
+                <ul> 
+                <li><a href="#MediaCoverge" class="nav-link"> Media Coverage </a></li>
+                <li><a href="#Reviews" class="nav-link"> Reviews </a></li>
+                <li><a href="#Prices" class="nav-link"> Prices </a></li>
+                </ul>
+            </nav>     
+        </header>  
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h3> Enter Email Address To Begin </h3>
+            <input type="email" placeholder="Enter your email now" id="email"> <br>  
+            <button type="submit" id="submit"> Begin </button>
+        </form>
+      
+             
+        <div id="flex">
+
+        <div id="container"> 
+            <div>
+                <img src="https://www.netsuite.com/portal/assets/img/business-articles/thumbnails/thmb-575x383-scenario-analysis.jpg" id="photolab"> 
+            </div>
+            
+            <div> 
+                <h3> Basic Package </h3>
+              <p> You will learn the basics of sales. </p>
+            </div>
+            
+            <div>
+                <img src="https://twistedsifter.files.wordpress.com/2012/03/the-lone-wolf.jpg?w=800&h=915" id="photolab"> 
+            </div>
+            
+            <div>
+                <h3> Alpha Sales </h3>
+                <p> You will learn how to make 1 million a year</p>
+            </div>
+            
+            <div>
+                <img src="https://www.netsuite.com/portal/assets/img/business-articles/financial-management/bnr-sales-revenue.jpg" id="photolab">
+            </div>
+            
+            <div>
+                <h3> Ultimate Speakerman </h3>
+              <p> Test yourself beyond your limits </p>
+            </div>
+        </div>
+        
+        </div>
+            <div id="video1">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/sxRStrx8xtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p id="sur-thrive"> Be Better </p>
+            </div> 
+
+        
+        </div>
+
+
+<div id="shop">
+
+<div id="prices1"> 
+            <div class="title99"> Basic Package </div>
+            <div class="price"> £100 </div>
+            <div class="description-package">
+                <ul> 
+                    <li> 5 hour course </li><br>
+                    <li> Lunch Included </li><br>
+                    <li> Free Sales Kit </li><br>
+                </ul>
+                
+            </div>
+            <div class="button-ball"> 
+                <button type="button" id="button1" onclick="alert('Nice and easy?')"> Choose </button>
+                    </div>
+
+</div>
+
+<div id="prices1"> 
+            <div class="title99"> 
+Alpha Sales </div>
+            <div class="price"> £500 </div>
+            <div class="description-package">
+                <ul> 
+                    <li> Overnight stay </li><br>
+                    <li> Immersive Experience </li><br>
+                    <li> Free Sales Kit </li><br>
+                </ul>
+                
+            </div>
+            <div class="button-ball"> 
+                <button type="button" id="button1" onclick="alert('Are you ready for this?')"> Choose </button>
+                    </div>
+
+</div>
+
+<div id="prices1"> 
+            <div class="title99"> Ultimate Speakerman </div>
+            <div class="price"> £1000 </div>
+            <div class="description-package">
+                <ul> 
+                    <li> Liability-waiver Required </li><br>
+                    <li> 3-Day Stay </li><br>
+                    <li> Free Sales Kit </li><br>
+                </ul>
+                
+            </div>
+            <div class="button-ball"> 
+                <button type="button" id="button1" onclick="alert('Ready to Unlock Your Dreams?')"> Choose </button>
+                    </div>
+
+  </div>
+</div>
+
+<footer> 
+    <ul> 
+        <li><a href="#header"> Privacy </a></li>
+        <li><a href="#header"> Terms </a></li>
+        <li><a href="#header"> Contact </a></li><br>
+        <li id="copyright"> Copyright 2018, The Speaker LLC </li>
+    </ul>
+  </footer>
+  
+ 
